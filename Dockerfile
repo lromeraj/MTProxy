@@ -17,4 +17,4 @@ COPY Makefile Makefile
 
 RUN make -j 2
 
-ENTRYPOINT [ "obj/bin/mtproto-proxy" ]
+ENTRYPOINT [ "objs/bin/mtproto-proxy" ]
