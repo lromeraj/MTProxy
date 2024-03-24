@@ -3,7 +3,7 @@ FROM ubuntu:22.04
 WORKDIR /mt-proto
 
 RUN apt update && apt install -y \
-  git make build-essential libssl-dev zlib1g-dev
+  git make build-essential libssl-dev zlib1g-dev dnsutils
 
 COPY .git/ .git
 COPY common/ common/
