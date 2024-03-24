@@ -14,7 +14,8 @@ COPY mtproto/ mtproto/
 COPY net/ net/ 
 COPY vv/ vv/
 COPY Makefile Makefile
+COPY entrypoint.sh entrypoint.sh
 
 RUN make -j 2
 
-ENTRYPOINT [ "objs/bin/mtproto-proxy" ]
+ENTRYPOINT [ "./entrypoint.sh" ]
